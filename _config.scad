@@ -82,3 +82,21 @@ CENTER_HOLE = 8;
  * @type {Number} Integer
  */
 FN = 100; //N_SLOTS*2;
+
+params = [
+	["DIAMETER", DIAMETER],
+	["MATERIAL", MATERIAL],
+	["KERF", KERF],
+	["CLEARANCE", CLEARANCE],
+	["N_SLOTS", N_SLOTS],
+	["SLOT_DEPTH", SLOT_DEPTH],
+	["SLOT_TYPE", SLOT_TYPE],
+	["CHAMFER", CHAMFER],
+	["CENTER_HOLE", CENTER_HOLE],
+	["FN", FN]
+];
+
+for (item = params)
+{
+	echo(str(item[0], ":", item[1]));
+}
