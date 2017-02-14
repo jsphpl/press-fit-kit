@@ -33,7 +33,7 @@ KERF = .0576;
  *
  * @type {Number} Float (mm)
  */
-CLEARANCE = 0;
+CLEARANCE = -.05;
 
 /**
  * The number of slots in one disk.
