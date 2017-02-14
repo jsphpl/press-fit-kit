@@ -72,7 +72,7 @@ CHAMFER = .15;
  *
  * @type {Number} Float (mm)
  */
-CENTER_HOLE = 8;
+CENTER_HOLE = 6;
 
 /**
  * Number of circle fragments per 360. Higher numbers

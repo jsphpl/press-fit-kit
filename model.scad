@@ -32,17 +32,19 @@ module 3D()
  */
 module 2D()
 {
-	difference()
-	{
-		circle(r = RADIUS, $fn=FN);
-		circle(d = CENTER_HOLE, $fn=FN);
-		for (index = [0:N0_SLOTS])
+	offset(r = KERF/2)
+		difference()
 		{
-			rotate([0, 0, SLOT_ANGLE*index])
-			translate([RADIUS, 0, 0])
-				slot(SLOT_TYPE, CHAMFER);
+			circle(r = RADIUS, $fn=FN);
+			// -
+			circle(d = CENTER_HOLE, $fn=FN);
+			for (index = [0:N0_SLOTS])
+			{
+				rotate([0, 0, SLOT_ANGLE*index])
+				translate([RADIUS, 0, 0])
+					slot(SLOT_TYPE, CHAMFER);
+			}
 		}
-	}
 }
 
 if (all_valid) {
